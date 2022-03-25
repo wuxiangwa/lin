@@ -1,0 +1,561 @@
+a{
+    text-decoration: none;
+    color: #eef0f2;
+    // color: ;
+}
+/* 设置背景 */
+    .bg-wrapper{
+        width: 1920px;
+        height: 1080px;
+        margin: 0 auto;
+        background-image: url(../image/bg.png);
+        background-size:cover;
+        // 头部
+        .header-wrapper{
+            /* 设置header 对齐方式 */
+            .header{
+                width: 1920px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .lf-ret-wrapper{
+                    display: flex;
+                    // flex-grow: 1;
+                    width: 333px;
+                    .ret{
+                        display: block;
+                        width: 37px;
+                        height: 37px;
+                        border: 1px solid #055ba7;
+                        border-radius: 50%;
+                        background-color: #0c2d69;
+                        position: relative;
+                        top: -13px;
+                        margin-left: 122px;
+                        img{
+                            // width: 100%;
+                            // height: 100%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                        }
+                    }
+                }
+                h1{
+                    line-height: 98px;
+                    color: #d0e4ff;
+                    font-size: 38px;
+                    display: flex;
+                    // flex-grow: 1;
+                    text-align: center;
+                    text-shadow: 0 0 10px ;
+                }
+                .user-info-wrapper{
+                    display: flex;
+                    // flex-grow: 1;
+                    margin-right: 25px;
+                    position: relative;
+                    top: -13px;
+                    .nav{
+                        width: 137px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-right: 25px;
+                        li{
+                            a{
+                                position: relative;
+                                display: block;
+                                width: 37px;
+                                height: 37px;
+                                background-color: rgba(11, 46, 106, .5);
+                                border: 1px solid #055ba7;
+                                border-radius: 50%;
+                                img{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translateX(-50%) translateY(-50%);
+                                }
+                            }
+                        }
+                    }
+                    .information{
+                        position: absolute;
+                        top:-5px;
+                        left: 124px;
+                        width: 25px;
+                        height: 20px;
+                        background-color: #ffad00;
+                        border-radius: 10px;
+                        a{
+                            display: block;
+                            text-align: center;
+                            color: #eef0f2;
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                    .user-info{
+                        display: flex;
+                        align-items: center;
+                        
+                        .avatar{
+                            width: 46px;
+                            height: 46px;
+                            background-color: #505e74;
+                            // border: 1px solid #505e74;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            a{
+                                display: block;
+                                img{
+                                    width: 46px;
+                                    height: 46px;
+                                    // background-color: #bfa;
+                                }
+                            }
+                        }
+                        .username{
+                            display: flex;
+                            font-size: 18px;
+                            color: #eef0f2;
+                            a{
+                                display: block;
+                                margin-left:14px;
+                                i{
+                                    margin-left:14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //  主体
+        .main-wrapper{
+            margin-top: 56px;
+            margin: 56px 35px 0px;
+            // 启动flex布局
+            display: flex;
+            // 设置对齐 两边对齐
+            justify-content: space-between;
+            // align-items: center;
+            perspective: 800px;
+            // 左侧部门建议
+            .suggestion-wrapper{
+                width: 416px;
+                height: 613px;
+                margin-top: 50px ;
+                transform-style: preserve-3d;
+                // 背景层
+                .lf-bg{
+                    background-color: #5de9fa;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(../image/左侧1.png);
+                    background-size:100% 100%;
+                    overflow: hidden;
+                    transform-origin: left;
+                    transform: rotateY(65deg);
+                    h1{
+                        
+                        margin-top: 31px;
+                        height: 31px;
+                        font-size: 22px;
+                        color: #fff;
+                        text-align: center;
+                        span{
+                            color: #ffcf6b;
+                            font-size: 30px;
+                            margin-left: 17px;
+                        }
+                    }
+                    // 列表项
+                    ul{
+                
+                        width: 360px;
+                        // height: 200px;
+                        margin:  14px auto 0 auto ;
+                        // background-color: #bfa;
+                        li:nth-child(2n+1){
+                            background-color: rgba(24, 103, 220,.5);
+                            }
+                        li{
+                            :hover{
+                                i{
+                                    color: #fff;
+                                }
+                                background-color: #1867dd;
+                            }
+                            height: 35px;
+                            line-height: 35px;
+                            font-size: 14px;
+                            a{
+                                display: block;
+                                // i:nth-child(odd){
+                                //     color: #1867dd;
+                                // }
+                                i{
+                                    margin-right: 5px;
+                                    color: #1867dd;
+                                }
+                                p{
+                                    float: right;  
+                                    font-size: 12px;                                  
+                                }
+                            }
+                        }
+
+                    }
+                    #main{
+                        width: 430px;
+                        height: 350px;
+                        margin: 0 auto;
+                        // background-color: #bfa;
+                    }
+                }
+            }
+            // 中间立法库
+            .library{
+                width: 1008px;
+                height: 665px;
+                // background-color: rgba(195, 228, 135, 0.5);
+                // 统计数字
+                .statisticd{
+                    position: relative;
+                    // 设置背景层
+                    .bg-opct{
+                        width: 180px;
+
+                        margin: 30px  auto;
+                        .top-bg{
+                            
+                            display: flex;
+                            justify-content: space-between;
+                            li{
+                                width: 41px;
+                                height: 30px;
+                                background-color: #166297;
+                                border-top-left-radius: 6px ;
+                                border-top-right-radius: 6px ;
+                            }
+                        }
+                        .bottom-bg{
+                            margin-top: 2px;
+                            display: flex;
+                            justify-content: space-between;
+                            li{
+                                width: 41px;
+                                height: 30px;
+                                background-color: #166297;
+                                border-bottom-left-radius: 6px ;
+                                border-bottom-right-radius: 6px ;   
+                            }
+                                
+                        }
+                    }
+                    // 设置统计数据
+                    .statisticd-data{
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 180px;
+                        line-height: 62px;
+                        transform: translateX(-50%);
+                        ul{
+                            display: flex;
+                            // justify-content: space-between;
+                            font-size: 48px;
+                            font-weight: 500;
+                            background: linear-gradient( #fcffff,#5bffff );
+                            color: transparent;
+                            -webkit-background-clip: text;
+                            padding-left: 5px;
+                            li{
+                                margin-right: 18px;
+                            }
+                        }
+                    }
+                }
+                //列入项目
+                .item{
+                    width: 857px;
+                    // height: 50px;
+                    // background-color: #fff;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        display: block;
+                        line-height: 50px;
+                        font-size: 30px;
+                        span{
+                            vertical-align: bottom;
+                            font-size: 48px;
+                            margin-left: 4px;
+                            background: linear-gradient( #fcffff,#5bffff );
+                            color: transparent;
+                            -webkit-background-clip: text;
+                        }
+                    }
+                }
+                // 中央省委
+                .central{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 78px  40px 0 40px;
+                    // 中央决策
+                    .lf-zyjc,.rt-swyq{
+                        width: 123px;
+                        height: 184px;
+                        background-color: rgba(18, 74, 160, .5);
+                        // opacity: .5;
+                        a{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            .icon{
+                                margin-top: 13px;
+                                position: relative;
+                                width: 80px;
+                                height: 82px;
+                                background-image: url(../image/item.png);
+                                background-size:cover;
+                                img{
+                                    position: absolute;
+                                    top: 45%;
+                                    left: 50%;
+                                    transform: translateX(-50%) translateY(-50%);
+                                }
+                            }
+                            h1{
+                                margin: 15px 0;
+                                font-size: 20px;
+                                color: #38f5e0;
+                            }
+                            .strip{
+                                width: 64px;
+                                height: 24px;
+                                background-color: #1f74b6;
+                                border: 1px solid #01c1de;
+                                border-radius: 5px;
+                                line-height: 24px;
+                                text-align: center;
+                                span{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                    // 立法需求库
+                    .md-lfxq{
+                        width: 240px;
+                        height: 69px;
+                        line-height: 69px;
+                        margin-top: 95px;
+                        // background-color: rgb(245, 145, 145);
+                        h1{
+                            text-align: center;
+                            font-size: 40px;
+                            color: #ffffff;
+                        }
+                    }
+                }
+                // 部门列表项
+                .legislation-item{
+                    margin: 22px 40px 0 40px;
+                    ul{
+                        display: flex;
+                        justify-content: space-between;
+                        background-color: rgba(18, 74, 160, .5);
+                        // opacity: .5;
+                        li{
+                            width: 123px;
+                            height: 184px;
+                        // background-color: #bfa;
+                        a{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            .icon{
+                                margin-top: 13px;
+                                position: relative;
+                                width: 80px;
+                                height: 82px;
+                                background-image: url(../image/item.png);
+                                background-size:cover;
+                                img{
+                                    position: absolute;
+                                    top: 45%;
+                                    left: 50%;
+                                    transform: translateX(-50%) translateY(-50%);
+                                }
+                            }
+                            h1{
+                                margin: 15px 0;
+                                font-size: 20px;
+                                color: #38f5e0;
+                            }
+                            .strip{
+                                width: 64px;
+                                height: 24px;
+                                background-color: #1f74b6;
+                                border: 1px solid #01c1de;
+                                border-radius: 5px;
+                                line-height: 24px;
+                                text-align: center;
+                                span{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        }
+                    }
+                }
+            
+            }
+            // 右侧执法检查
+            .check{
+                width: 416px;
+                height: 613px;
+                margin-top: 50px ;
+                transform-style: preserve-3d;
+                // background-color: rgb(116, 72, 72);
+                // perspective: 800px;
+            
+                .lf-bg{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(../image/左侧1.png);
+                    background-size:100% 100%;
+                    overflow: hidden;
+                    // background-color: #5de9fa;
+                    transform-origin: right;
+                    transform: rotateY(-65deg);
+                    h1{
+                        
+                        margin-top: 31px;
+                        height: 31px;
+                        font-size: 22px;
+                        color: #fff;
+                        text-align: center;
+                        span{
+                            color: #22f3df;
+                            font-size: 30px;
+                            margin-left: 17px;
+                        }
+                    }
+                    // 列表项
+                    ul{
+                
+                        width: 360px;
+                        // height: 200px;
+                        margin:  14px auto 0 auto ;
+                        // background-color: #bfa;
+                        li:nth-child(2n+1){
+                            background-color: rgba(24, 103, 220,.5);
+                            }
+                        li{
+                            :hover{
+                                background-color: #1867dd;
+                            }
+                            height: 35px;
+                            line-height: 35px;
+                            font-size: 14px;
+                            a{
+                                display: block;
+                                text-align: center;
+
+                                i:nth-child(odd){
+                                    color: #fff;
+                                }
+                                i{
+                                    margin-right: 5px;
+                                    color: #1867dd;
+                                }
+                                p{
+                                    float: right;  
+                                    font-size: 12px;                                  
+                                }
+                            }
+                        }
+
+                    }
+                    #r-main{
+                        width: 430px;
+                        height: 350px;
+                        margin: 0 auto;
+                        // background-color: #bfa;
+                    }
+                }
+            }
+        }
+        // footer
+        .footer{
+            width: 1008px;
+            height: 200px;
+            // margin-top: 32px;
+
+            margin: 32px auto 0 auto;
+            // background-color: #fff;
+            .item-list{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 55px;
+                a{
+                    width: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    div{
+                        width: 126px;
+                        height: 175px;
+                        // background-color: #fff;
+                        position: relative;
+                        img{
+                            position: absolute;
+                        }
+                        .lfimg{
+                            top: -5px;
+                            left: -63px;
+                        }
+                        .mdimg{
+                            top: -38px;
+                            left: 10px;
+                        }
+                        .rtimg{
+                            top: -20px;
+                            left: 14px;
+                        }
+                    }
+                    h2{
+                        position: relative;
+                        text-align: center;
+                        font-size: 30px;
+                        display: block;
+                        color: #22f3df;
+                    }
+                    .lft{
+                        left: 13px;
+                        color: #ffcf6b;
+                    }
+                    .mdt{
+                        top:-10px;
+                        left: 10px;
+                    }
+                    .rtt{
+                        left: 5px;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+
